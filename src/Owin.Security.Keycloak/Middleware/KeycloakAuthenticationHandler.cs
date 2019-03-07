@@ -37,7 +37,7 @@ namespace Owin.Security.Keycloak.Middleware
                             SignInAsAuthentication(identity, null, Options.SignInAsAuthenticationType);
                             return new AuthenticationTicket(identity, new AuthenticationProperties());
                         }
-                        catch (Exception)
+                        catch (Exception ex)
                         {
                             // ignored
                         }
